@@ -10,6 +10,67 @@
 <script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
 <script type="text/javascript" src="js/html5.js"></script>
 <![endif]-->
+
+
+<style>
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+</style>
+
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
 </head>
 <body id="page2">
 <div class="body1">
@@ -58,31 +119,39 @@
 			<section id="content">
 				<article class="col1">
 				<br>
-					
+						
 					<h3>Partners</h3>
 					<div class="wrapper">
 						<figure class="left marg_right1"><a href="#"><img src="images/chu2.jpg" alt=""></a></figure>
 						<p style="font-size:14px;">
-							<strong> Sahloul Hospital of Sousse </strong><br><p style="text-align: justify; font-size:11px;">The Sahloul hospital is a public health establishment and a Tunisian university hospital center located in Sousse.
-							The main activity of the Sahloul University Hospital is to provide care as well as to ensure prevention, education and research in the medical and health fields. </p>
+							<strong> Sahloul Hospital of Sousse </strong><br>
+							<input type="button" onclick="myFunction()" value="Read more" id="myBtn">
+							<p style="text-align: justify; font-size:11px;"> <span id="dots"></span><span id="more">The Sahloul hospital is a public 
+							health establishment and a Tunisian university hospital center located in Sousse.
+							The main activity of the Sahloul University Hospital is to provide care as well as 
+							to ensure prevention, education and research in the medical and health fields.</span> </p>
 						</p>
 					</div>
 					<div class="wrapper">
 						<figure class="left marg_right1"><a href="#"><img src="images/us2.jpg" alt=""></a></figure>
 						<p style="font-size:14px;">
 							<strong> University of Sousse</strong>
-						<p style="text-align: justify; font-size:11px;">
-							The University of Sousse is a public academic organization that offers bachelor's, master's and doctorate training programs in four families of disciplines namely humanities, social sciences, engineering and technology and health sciences.
-						</p>
+							<input type="button" onclick="myFunction1()" value="Read more" id="myBtn1">
+							<p style="text-align: justify; font-size:11px;"> <span id="dots1"></span><span id="more1">
+							The University of Sousse is a public academic organization that offers bachelor's, master's 
+							and doctorate training programs in four families of disciplines namely humanities, social sciences, 
+							engineering and technology and health sciences.
+						</span></p>
 					</div>
 					<div class="wrapper">
 						<figure class="left marg_right1"><a href="#"><img src="images/issat2.jpg" alt=""></a></figure>
 						<p style="font-size:14px;">
-							<strong>ISSAT Sousse</strong>
-						<p style="text-align: justify; font-size:11px;">
+							<strong>ISSAT Sousse</strong><br>
+						    <input type="button" onclick="myFunction2()" value="Read more" id="myBtn2">
+							<p style="text-align: justify; font-size:11px;"> <span id="dots2"></span><span id="more2">
 							The Higher Institute of Applied Sciences and Technology of Sousse is a scientific institute under the University of Sousse (Tunisia)
 							It offers training in the fields of computing, electronics, energy and mechanics. The mission of the ISSAT is also to train computer engineers and multidisciplinary research Masters.
-						</p>
+						</span></p>
 					</div>
 				</article>
 				<article class="col2">
@@ -109,55 +178,7 @@
 <div class="body3">
 	<div class="main">
 		<section id="content2">
-			<article class="col3">
-				<h4><span><span class="right"></span>Lab Equipment</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<p class="pad_bot3">
-							<strong>Vero eoset accusamus eot iusto odio dignissimos</strong>
-						</p>
-						<p class="pad_bot3">
-							Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores erum facilis est et expedita distinc et quas molestias excepturi occaecati cupiditate corrupti quos.
-						</p>
-						<p>
-							Non provident, similique sunt infgo culpa qui officia deserunt mollitia animid laborum et dolorum fuga. Et harum quidem.
-						</p>
-					</div>
-				</div>
-			</article>
-			<article class="col4">
-				<h4><span><span class="right"></span>Our Researches</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<ul class="list2">
-							<li><a href="#">Blanditiis praesentium</a></li>
-							<li><a href="#">Voluptatum deleniti atqoue</a></li>
-							<li><a href="#">Corrupti qufgos dolores et quas</a></li>
-							<li><a href="#">Molestias excepturi sint</a></li>
-							<li><a href="#">Occaecati cupiditate</a></li>
-							<li><a href="#">Non provident, similique suont</a></li>
-							<li><a href="#">Culpa qui officia deserunt</a></li>
-							<li><a href="#">Mollitia animid laborum</a></li>
-						</ul>
-					</div>
-				</div>
-			</article>
-			<article class="col4">
-				<h4><span><span class="right"></span>Integrated Science</span></h4>
-				<div class="wrapper">
-					<div class="pad">
-						<p class="pad_bot3">
-							Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-						</p>
-						<p class="pad_bot3">
-							Non provident, similique sunt in culpa qui officia deserunt mollitia animid laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-						</p>
-						<p>	
-							<a href="#">Nam libero tempore, cumoluta nobis est eligendi optio cumque</a>
-						</p>
-					</div>
-				</div>
-			</article>
+			
 		</section>
 <!-- / content -->
 <!-- footer -->
