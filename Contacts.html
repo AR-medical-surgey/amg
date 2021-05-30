@@ -6,6 +6,46 @@
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script language="javascript" >
+ 
+ function send(){
+  e.preventDefault(); 
+    try {
+      $.ajax({
+  type: “POST”,
+  url: “https://mandrillapp.com/api/1.0/messages/send.json”,
+  data: {
+    ‘key’: ‘YOUR API KEY HERE’,
+    ‘message’: {
+      ‘from_email’: ‘ellouminessrine@gmail’,
+      ‘to’: [
+          {
+            ‘email’: ‘benjemaaa344@gmail.com’,
+            ‘name’: ‘RECIPIENT NAME (OPTIONAL)’,
+            ‘type’: ‘to’
+          },
+          {
+            ‘email’: ‘ellouminessrine@gmail’,
+            ‘name’: ‘ANOTHER RECIPIENT NAME (OPTIONAL)’,
+            ‘type’: ‘to’
+          }
+        ],
+      ‘autotext’: ‘true’,
+      ‘subject’: ‘YOUR SUBJECT HERE!’,
+      ‘html’: ‘YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!’
+    }
+  }
+ }).done(function(response) {
+   console.log(response); // if you're into that sorta thing
+ });
+    } catch (e) {
+      throw new Error(e.message);
+    }
+     return false;
+ }
+ </script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script_other.js"></script>
 <script type="text/javascript" src="js/html5.js"></script>
@@ -79,7 +119,7 @@ et aut officiis debitis aut.
 				</article>
 				<article class="col2">
 					<h3>Contact Form</h3>
-					<form id="ContactForm" action="mailto:borhen.louhichi@issatso.u-sousse.tn">
+					<form id="ContactForm" onsubmit="return send(event)" >
 					<!-- <form id="ContactForm" action="mailto:ellouminessrine@gmail.com" method="get" enctype="text/plain"> -->
 						<div>
 							<div class="wrapper">
@@ -91,7 +131,7 @@ et aut officiis debitis aut.
 							<div class="textarea_box">
 								<span>Message:</span><textarea name="textarea" cols="1" rows="1"></textarea>
 							</div>
-							<input type="submit" value="Send">
+							<input type="submit" value="Send" onClick="send();"  >
 							<input type="reset" value="Clear">
 						<!-- 	<a href="#" class="button" onClick="document.getElementById('ContactForm').submit()">Send</a>
 							<a href="#" class="button" onClick="document.getElementById('ContactForm').reset()">Clear</a> -->
