@@ -16,8 +16,116 @@
 #more {display: none;}
 #more1 {display: none;}
 #more2 {display: none;}
+#moreb {display: none;}
+#moreai {display: none;}
+#morene {display: none;}
+#moreay {display: none;}
+#morean {display: none;}
+#morem {display: none;}
 </style>
 
+<script>
+function myFunctionb() {
+  var dots = document.getElementById("dotsb");
+  var moreText = document.getElementById("moreb");
+  var btnText = document.getElementById("myBtnb");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunctionai() {
+  var dots = document.getElementById("dotsai");
+  var moreText = document.getElementById("moreai");
+  var btnText = document.getElementById("myBtnai");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunctionne() {
+  var dots = document.getElementById("dotsne");
+  var moreText = document.getElementById("morene");
+  var btnText = document.getElementById("myBtnne");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunctionay() {
+  var dots = document.getElementById("dotsay");
+  var moreText = document.getElementById("moreay");
+  var btnText = document.getElementById("myBtnay");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunctionan() {
+  var dots = document.getElementById("dotsan");
+  var moreText = document.getElementById("morean");
+  var btnText = document.getElementById("myBtnan");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<script>
+function myFunctionm() {
+  var dots = document.getElementById("dotsm");
+  var moreText = document.getElementById("morem");
+  var btnText = document.getElementById("myBtnm");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 <script>
 function myFunction() {
   var dots = document.getElementById("dots");
@@ -35,6 +143,7 @@ function myFunction() {
   }
 }
 </script>
+
 <script>
 function myFunction1() {
   var dots = document.getElementById("dots1");
@@ -157,32 +266,33 @@ function myFunction2() {
 				<article class="col2">
 					<h3>Researches</h3>
 					<div class="wrapper">
-						<figure class="left marg_right1"><img src="images/page3_img1.jpg" alt=""></figure>
-						<p class="pad_bot1">
-							<strong>Pr. Mehdi Jaidenne</strong> 
+						<figure class="left marg_right1"><img src="images/m.jpg" alt="Mehdi Jaidane"></figure>
+						<p class="pad_bot1"  style="text-align: justify;">
+							<strong>Pr. Mehdi Jaidane</strong> 
 							odio dignis- simos ducimus qui blanditiis praesentium 
 							volup- tatum deleniti atque corrupti quos dolores et quas molestias excepturi 
 							sint occaecati cupidi- tate non provident, similique sunt in culpa qui officia deserunt mollitia.
-						</p>
-						<p class="pad_bot1">	
+						<input type="button" onclick="myFunctionm()" value="Read more" id="myBtnm">
+							<p class="pad_bot1"  style="text-align: justify;"> <span id="dotsm"></span><span id="morem">
 							Et harum quidem rerum facilis est et expedita distinctio. 
 							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
 							id quod maxime placeat facere possimus, omnis voluptas.
-						</p>
+						</span></p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><img src="images/bl1.jpg" alt=""></figure>
-						<p class="pad_bot1">
+						<figure class="left marg_right1"><img src="images/bl1.jpg" alt="Borhen LOUHICHI"></figure>
+						<p class="pad_bot1"  style="text-align: justify;">
 							<strong>Pr. Borhen LOUHICHI</strong> 
 							is an Associate Professor at the Higher Institute of Applied Sciences and Technology 
 							of Sousse ISSATSo - University of Sousse, Tunisia and Adjunct Professor at Ecole de Technologie 
-							Supérieure in Montreal, Canada. He holder of a PhD in Mechanical Engineering from the ENI Monastir, 
+							Supérieure in Montreal, Canada.
+							<input type="button" onclick="myFunctionb()" value="Read more" id="myBtnb">
+							<p class="pad_bot1"  style="text-align: justify;"> <span id="dotsb"></span><span id="moreb">
+							He holder of a PhD in Mechanical Engineering from the ENI Monastir, 
 							University of Monastir, Tunisia (2008) and he has obtained his Habilitation to Supervise Research (HDR)
 							in Mechanical Engineering from the University of Technology of Compiegne, France (2015).
 
-						</p>
-						<p class="pad_bot1">	
-							 After obtaining
+							After obtaining
 							his Ph.D, he is involved in many development and research projects as a co-supervisor of Ph.D thesis and 
 							Postdoctoral researcher at the University of Sousse, Tunisia, the University of Liege, Belgium and ETS, 
 							Canada. Many of these projects are with international companies like Rolls-Royce and Bombardier Aerospace
@@ -194,71 +304,89 @@ function myFunction2() {
 							hours of innovation in his institute at Sousse, Tunisia. He is an expert – Design and Multimedia at UTICA, 
 							Tunisia and member of the scientific committee at the University of Sousse, Tunisia since 2017.
 							He is the Co-funder and the president of the Tunisian Organization of 3D Printing.
-						</p>
+						</span></p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><img src="images/ai1.jpg" alt=""></figure>
-						<p class="pad_bot1">
+						<figure class="left marg_right1"><img src="images/ai1.jpg" alt="Aicha BEN MAKHLOUF"></figure>
+						<p class="pad_bot1"  style="text-align: justify;">
 							<strong>Dr.Aicha BEN MAKHLOUF</strong> 
 							is a researcher at Sousse University. She received her Ph.D. in computer Science in 2020 
-							from ISITCom HAMMAM SOUSSE - University of Sousse, Tunisia. She is a member of the Research Laboratory LATIS 
+							from ISITCom HAMMAM SOUSSE - University of Sousse, Tunisia. She is a member of the Research Laboratory LATIS
+							
+							<input type="button" onclick="myFunctionai()" value="Read more" id="myBtnai">
+							<p class="pad_bot1"  style="text-align: justify;"> <span id="dotsai"></span><span id="moreai">							
 							(Laboratory of Advanced Technology and Intelligent Systems). She received the engineering Diploma in Software 
 							Engineering from the Higher Institute of Applied Sciences and Technology Sousse (ISSATso) in 2016.
-						</p>
-						<p class="pad_bot1">	
+						
 							Her research interest focuses on 3D reconstruction, Computer Aided Design (CAD), 
 							reverse engineering (RE), 3D Computer graphics, 3D shape processing, 3D Computer vision, 
 							deformed mesh reconstruction, Building information modeling (BIM). She is particularly interested in 
 							the application of 3D surface reconstruction methods to rebuild the deformed CAD model in various fields such as 
 							mecanical models, Augmented reality, 3D printing, building models, additive manufacturing, etc.
-						</p>
+						</span></p>
 					</div>
 					<div class="wrapper">
-						<figure class="left marg_right1"><img src="images/ne1.jpg" alt=""></figure>
-						<p class="pad_bot1">
+						<figure class="left marg_right1"><img src="images/ne1.jpg" alt="Nessrine ELLOUMI"></figure>
+						<p class="pad_bot1"  style="text-align: justify;">
 							<strong>Dr.Nessrine ELLOUMI</strong> 
 							is a researcher at Sfax University. She received her Ph.D. in computer Science in 2021 from 
-							ISITCom HAMMAM SOUSSE - University of Sousse, Tunisia. She is a member of the Research Unit SETIT 
+							ISITCom HAMMAM SOUSSE - University of Sousse, Tunisia. She is a member of the Research Unit SETIT
+							<br> 
+							<input type="button" onclick="myFunctionne()" value="Read more" id="myBtnne">
+							<p class="pad_bot1"  style="text-align: justify;"> <span id="dotsne"></span><span id="morene">							
 							(Sciences and Technologies of Image and Telecommunications). She received the engineering Diploma on multimedia 
 							and web technology from the Higher Institute of Informatics and Multimedia of Sfax-Tunisia (ISIMS) in 2015. 
 							She is a member of the organizing committee at the international conference: Sciences of Electronic, Technologies of 
 							Information and Telecommunication SETIT’16 and SETIT'18.
-						</p>
-						<p class="pad_bot1">	
 							Her research interest focuses on 3D Computer vision, 3D Computer graphics, Computer Aided Design (CAD), 
 							3D shape processing, Visual Perception, Visual quality assessment, 3D Shape modeling, deformed mesh, 
 							Human visual system, Objective perceptual quality metric. She is particularly interested in the application of 
 							3D objective metrics to measure the geometrical distortion applied on 3D model in various fields such as medical prosthesis, 
 							Augmented reality, 3D printing, etc.
-						</p>
+						</span></p>
+					</div>
+					<div class="wrapper">
+						<figure class="left marg_right1"><img src="images/ay.jpg" alt=""></figure>
+						<p class="pad_bot1"  style="text-align: justify;">
+							<strong>Aymen AFLI</strong> 
+							is a research master's student in computer science at ISSAT Sousse University. 
+							He completed his undergraduate studies and received his bachelor's degree 
+							in computer science from ISSAT Sousse in 2019.
+							<br> 
+							<input type="button" onclick="myFunctionay()" value="Read more" id="myBtnay">
+							<p class="pad_bot1"  style="text-align: justify;"> <span id="dotsay"></span><span id="moreay">
+							He got involved in developing new methods to apply 3D printing technology in 
+							the medical field by generating highly customized 3D printed orthosis to aid 
+							the patients in their rehabilitation process.
+							He has a solid background in organic and CAD modeling, 3D printing, 
+							video-game development, and computer animations. 
+							His interest in Computer graphics led him to pursue his research journey by 
+							exploring various technologies such as Augmented Reality and physics simulations and 
+							study their application in the medical field.
+						</span></p>
+						
 					</div>
 					<div class="wrapper">
 						<figure class="left marg_right1"><img src="images/page3_img1.jpg" alt=""></figure>
-						<p class="pad_bot1">
-							<strong>Aymen ALIFI</strong> 
-							odio dignis- simos ducimus qui blanditiis praesentium 
-							volup- tatum deleniti atque corrupti quos dolores et quas molestias excepturi 
-							sint occaecati cupidi- tate non provident, similique sunt in culpa qui officia deserunt mollitia.
-						</p>
-						<p class="pad_bot1">	
-							Et harum quidem rerum facilis est et expedita distinctio. 
-							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-							id quod maxime placeat facere possimus, omnis voluptas.
-						</p>
-					</div>
-					<div class="wrapper">
-						<figure class="left marg_right1"><img src="images/page3_img1.jpg" alt=""></figure>
-						<p class="pad_bot1">
+						<p class="pad_bot1"  style="text-align: justify;">
 							<strong>Anass AYED</strong> 
-							odio dignis- simos ducimus qui blanditiis praesentium 
-							volup- tatum deleniti atque corrupti quos dolores et quas molestias excepturi 
-							sint occaecati cupidi- tate non provident, similique sunt in culpa qui officia deserunt mollitia.
-						</p>
-						<p class="pad_bot1">	
-							Et harum quidem rerum facilis est et expedita distinctio. 
-							Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-							id quod maxime placeat facere possimus, omnis voluptas.
-						</p>
+							is a researcher at ISSAT Sousse University. He completed his undergraduate 
+							studies and received his Bachelor diploma in Computer Science in 2019 <br> 
+							<input type="button" onclick="myFunctionan()" value="Read more" id="myBtnan">
+							<p class="pad_bot1"  style="text-align: justify;"> <span id="dotsan"></span><span id="morean">
+							from the Higher Institute of Applied Science and Technology of Sousse - University of Sousse, Tunisia and 
+							was awarded the Thomas Jefferson Scholarship certificate for completing the TCCSP Program 
+							sponsored by the Department of State, USA, and contribution into professional self-development 
+							and career pathways.
+							His background includes 3D modeling, computer generated imagery, software development and computer animation.
+							His research interest spans several disciplines including 
+							3D computer graphics, 3D computer vision, 3D modeling and processing, model 
+							deformable simulation and 3D modeling physics.
+							He particularly emphasizes on the application of 3D geometrical 
+							computation using Augmented Reality in medical simulations. 
+							In his spare time he enjoys playing video games and reading.
+						</span></p>
+						
 					</div>
 					
 		 		</article>
