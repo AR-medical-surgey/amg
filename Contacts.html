@@ -10,8 +10,8 @@
 
 <script language="javascript" >
  
- function send(e){
-  e.preventDefault(); 
+ function send(event){
+  event?.preventDefault(); 
   alert('test');
     try {
       $.ajax({
@@ -20,7 +20,7 @@
   data: {
     'key': 'YOUR API KEY HERE',
     'message': {
-      'from_email': 'ellouminessrine@gmail',
+      'from_email': 'ellouminessrine@gmail.com',
       'to': [
           {
             'email': 'benjemaaa344@gmail.com',
@@ -28,7 +28,7 @@
             'type': 'to'
           },
           {
-            'email': 'ellouminessrine@gmail',
+            'email': 'ellouminessrine@gmail.com',
             'name': 'ANOTHER RECIPIENT NAME (OPTIONAL)',
             'type': 'to'
           }
