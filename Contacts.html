@@ -12,25 +12,28 @@
  
  function send(event){
   event?.preventDefault(); 
-  alert('test');
+   let name =	 document.getElementById("name").value ;
+   let email =	 document.getElementById("email").value ;
+   let textarea =  document.getElementById("textarea").value ;
+   
     try {
       $.ajax({
   type: 'POST',
   url: "https://mandrillapp.com/api/1.0/messages/send.json",
   data: {
-    'key': 'j_3m-yz2BL66d-DJfzqJbA',
+    'key': 'j_3m-yz2BL66d-DJfzqJbA_test',
     'message': {
-      'from_email': 'benjemaaa344@gmail.com',
+      'from_email': 'ellouminessrine@gmail.com',
       'to': [
           {
-            'email': 'ellouminessrine@gmail.com',
-            'name': 'RECIPIENT NAME (OPTIONAL)',
+            'email': email,
+            'name': name ,
             'type': 'to'
           },
         ],
       'autotext': 'true',
       'subject': 'AR-medical-surgey',
-      'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+      'html': textarea
     }
   }
  }).done(function(response) {
@@ -119,13 +122,13 @@ et aut officiis debitis aut.
 					<!-- <form id="ContactForm" action="mailto:ellouminessrine@gmail.com" method="get" enctype="text/plain"> -->
 						<div>
 							<div class="wrapper">
-								<span>Name:</span><input type="text" class="input" >
+								<span>Name:</span><input type="text" class="input" name="name" />
 							</div>
 							<div class="wrapper">
-								<span>Email:</span><input type="text" class="input" >
+								<span>Email:</span><input type="text" class="input" name="email" />
 							</div>
-							<div class="textarea_box">
-								<span>Message:</span><textarea name="textarea" cols="1" rows="1"></textarea>
+							<div class="textarea_box" >
+								<span>Message:</span><textarea name="textarea" cols="1" rows="1" ></textarea>
 							</div>
 							<input type="submit" value="Send" onClick="send();"  >
 							<input type="reset" value="Clear">
