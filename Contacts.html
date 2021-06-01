@@ -26,7 +26,7 @@
       'from_email': 'nesrine.elloumi@issatso.u-sousse.tn',
       'to': [
           {
-            'email': email,
+            'email':  email,
             'name': name ,
             'type': 'to'
           },
@@ -122,13 +122,13 @@ et aut officiis debitis aut.
 					<!-- <form id="ContactForm" action="mailto:ellouminessrine@gmail.com" method="get" enctype="text/plain"> -->
 						<div>
 							<div class="wrapper">
-								<span>Name:</span><input type="text" class="input" name="name" />
+								<span>Name:</span><input type="text" class="input" id="name" name="name" />
 							</div>
 							<div class="wrapper">
-								<span>Email:</span><input type="text" class="input" name="email" />
+								<span>Email:</span><input type="text" class="input" id="email" name="email" />
 							</div>
 							<div class="textarea_box" >
-								<span>Message:</span><textarea name="textarea" cols="1" rows="1" ></textarea>
+								<span>Message:</span><textarea name="textarea" id="textarea" cols="1" rows="1" ></textarea>
 							</div>
 							<input type="submit" value="Send" onClick="send();"  >
 							<input type="reset" value="Clear">
